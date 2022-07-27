@@ -7,6 +7,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
     <title>QR code component</title>
+    <style>
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: 'Outfit', sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 496px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  margin: 15px;
+  border-radius: 10px;
+}
+  
+p {
+  text-align: center;
+  font-weight: 400;
+  margin: 9px 28px 6px;
+}
+
+p.title {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.1px;
+    color: var(--dark-blue);
+  }
+
+p.details {
+  font-size: 15px;  
+  letter-spacing: 0.2px;
+  color: var(--grayish-blue);
+}
+    </style>
   </head>
   <body>
     <main>
@@ -16,6 +72,5 @@
         <p class="details">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
       </div>
     </main>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
